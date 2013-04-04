@@ -5,15 +5,9 @@ PRODUCT_DEVICE := generic
 
 PRODUCT_PACKAGES += \
     Superuser  \
-<<<<<<< HEAD
     su 
 
 SUPERUSER_EMBEDDED := true
-=======
-    su
-
-SUPERUSER_PACKAGE := com.perfectbutter.superuser
->>>>>>> github/master
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.url.legal=http://www.google.com/intl/%s/mobile/android/basic/phone-legal.html \
@@ -23,12 +17,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.error.receiver.system.apps=com.google.android.feedback \
     ro.com.google.locationfeatures=1 \
     ro.setupwizard.enterprise_mode=1 \
-<<<<<<< HEAD
     windowsmgr.max_events_per_sec=240 \
     persist.sys.root_access=3 
-=======
-    windowsmgr.max_events_per_sec=240 
->>>>>>> github/master
 
 # init.d support
 PRODUCT_COPY_FILES += \
