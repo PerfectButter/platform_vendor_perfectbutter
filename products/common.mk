@@ -9,6 +9,11 @@ PRODUCT_PACKAGES += \
 
 SUPERUSER_EMBEDDED := true
 
+# Copy specific apk's to system folder
+PRODUCT_COPY_FILES += \
+    vendor/perfectbutter/prebuilt/common/app/TerminalEmulator.apk:system/app/TerminalEmulator.apk \
+    vendor/perfectbutter/prebuilt/common/app/Dropbox.apk:system/app/Dropbox.apk
+
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.url.legal=http://www.google.com/intl/%s/mobile/android/basic/phone-legal.html \
     ro.url.legal.android_privacy=http://www.google.com/intl/%s/mobile/android/basic/privacy.html \
